@@ -96,12 +96,9 @@ while True:
                 elif total_fingers == 5:
                     current_chord = "D Major"
                     key = 'D'
-                
-                # Thumb only (Thumbs up) -> C Major
                 elif fingers[0] == 1 and total_fingers == 1:
                     current_chord = "C Major"
                     key = 'C'
-                
                 else:
                     current_chord = "Mute"
                     key = None
