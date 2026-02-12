@@ -106,8 +106,6 @@ while True:
                     current_chord = "Mute"
                     key = None
 
-                # --- TRIGGER AUDIO ---
-                # Only play if the chord changed to avoid spamming sound every frame
                 if current_chord != last_chord:
                     if key and key in sounds:
                         sounds[key].play()
@@ -115,10 +113,8 @@ while True:
     cv2.rectangle(img, (20, 20), (300, 100), (0, 0, 0), cv2.FILLED)
     cv2.putText(img, f'Chord: {current_chord}', (30, 70), 
                 cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
-
     cv2.imshow("AirString - Virtual Guitar", img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-
 cap.release()
 cv2.destroyAllWindows()
