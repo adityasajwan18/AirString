@@ -117,8 +117,6 @@ while True:
                 cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
 
     cv2.imshow("AirString - Virtual Guitar", img)
-
-    # Exit on 'q' key
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
