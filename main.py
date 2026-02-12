@@ -112,9 +112,6 @@ while True:
                     if key and key in sounds:
                         sounds[key].play()
                     last_chord = current_chord
-
-    # --- UI Display ---
-    # Draw a rectangle and text
     cv2.rectangle(img, (20, 20), (300, 100), (0, 0, 0), cv2.FILLED)
     cv2.putText(img, f'Chord: {current_chord}', (30, 70), 
                 cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3)
