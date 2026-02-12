@@ -105,7 +105,6 @@ while True:
                 else:
                     current_chord = "Mute"
                     key = None
-
                 if current_chord != last_chord:
                     if key and key in sounds:
                         sounds[key].play()
