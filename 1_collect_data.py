@@ -20,7 +20,7 @@ assert chord in CHORDS, f"Unknown chord. Choose from {CHORDS}"
 
 output_file = os.path.join(DATA_DIR, f"{chord}.csv")
 collected = 0
-TARGET = 300  # samples per chord
+TARGET = 300 
 
 print(f"Recording '{chord}'. Press 's' to save a frame, 'q' to quit.")
 
