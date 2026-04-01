@@ -99,11 +99,3 @@ while cap.isOpened():
 cap.release()
 cv2.destroyAllWindows()
 pygame.quit()
-## requirements.txt
-opencv-python
-mediapipe
-tensorflow
-numpy
-pandas
-scikit-learn
-pygame
