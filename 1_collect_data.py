@@ -8,7 +8,7 @@ mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7)
 mp_draw = mp.solutions.drawing_utils
 
-CHORDS = ["Am", "C", "D", "Em", "G"]
+CHORDS = ["Am", "C", "D", "Em", "G","Dhol"]
 DATA_DIR = "data"
 os.makedirs(DATA_DIR, exist_ok=True)
 
